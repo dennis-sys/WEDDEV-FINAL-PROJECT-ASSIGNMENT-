@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Kithinji | Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* Custom styles for Services Page */
+        .services-container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 2rem;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .services-header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: #007BFF;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #007BFF;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .service-btn:hover {
+            background: #0056b3;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            border-radius: 12px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background: white;
+            color: #007BFF;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DENIS</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="services-container">
+            <div class="services-header">
+                <h1>My Services</h1>
+                <p>I offer high-quality solutions tailored to your needs. Let’s build something amazing together.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create beautiful, intuitive, and user-centered interfaces that convert and delight.</p>
+                    <a href="contact.html" class="service-btn">Get Started</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <p>Pixel-perfect, responsive websites built with modern HTML, CSS, and JavaScript.</p>
+                    <a href="contact.html" class="service-btn">Get Started</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensure your site looks and works flawlessly on all devices — mobile, tablet, and desktop.</p>
+                    <a href="contact.html" class="service-btn">Get Started</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Website Optimization</h3>
+                    <p>Speed up your site, improve SEO, and enhance user experience for better performance.</p>
+                    <a href="contact.html" class="service-btn">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let’s discuss your goals and create a custom solution that exceeds your expectations.</p>
+                <a href="contact.html" class="cta-btn">Contact Me Today</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Denis K. Built with passion for coding</p>
+        <div class="social">
+            <a href="#"><img src="images/icons/github.svg" alt="GitHub"></a>
+            
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

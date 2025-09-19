@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Kithinji | Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* Local styles for resume page */
+        .resume-container {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-radius: 10px;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-header p {
+            font-size: 1.2rem;
+            color: #777;
+            margin: 0.5rem 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #007BFF;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid #007BFF;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .item-date {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .item-company, .item-school {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #218838;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .resume-container, .resume-container * {
+                visibility: visible;
+            }
+            .resume-container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+            header, footer, .download-btn {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                margin: 70px 1rem 20px;
+                padding: 1.5rem;
+            }
+
+            .resume-header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DENIS</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <div class="resume-header">
+                <h1>Denis Kithinji</h1>
+                <p>Frontend Developer & UI/UX Designer</p>
+                <div class="contact-info">
+                    <div class="contact-item">📧 denniskobia85@gmail.com</div>
+                    <div class="contact-item">📱 0790923075</div>
+                    <div class="contact-item">🌐 SKYNET.DEV</div>
+                    <div class="contact-item">📍 Nairobi, Kenya</div>
+                </div>
+                <a href="#" class="download-btn" onclick="window.print(); return false;">
+                    📄 Download / Print Resume
+                </a>
+            </div>
+
+            <section>
+                <h2>🛠️ Skills</h2>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML5 / CSS3</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>UI/UX Design</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Responsive Design</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>💼 Work Experience</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Frontend Developer</div>
+                        <div class="item-date">July 2025 – Present</div>
+                    </div>
+                    <div class="item-company">NYC Kenya</div>
+                    <p>Lead development of responsive web applications using React, Redux, and modern CSS. Collaborated with UX team to improve user engagement by 40%.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">UI Developer</div>
+                        <div class="item-date">January 2025 – June 2025</div>
+                    </div>
+                    <div class="item-company">Atlas AI community, Remote</div>
+                    <p>Built interactive interfaces for clients in healthcare and education sectors. Implemented design systems and reusable component libraries.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>🎓 Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">B.S. Actuarial Science</div>
+                        <div class="item-date">2017 – 2021</div>
+                    </div>
+                    <div class="item-school">Daystar University, Nairobi</div>
+                    <p>Graduated with first class Honors. Minor in Data Science and analytics.</p>
+                </div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">UX Design Certificate</div>
+                        <div class="item-date">2021</div>
+                    </div>
+                    <div class="item-school">Full-Stack Developer MERN Stack</div>
+                    <p>Power Learn Project Africa PLP.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>🏆 Certifications</h2>
+                <ul>
+                    <li>Google UX Design Professional Certificate — Coursera (2022)</li>
+                    <li>Advanced JavaScript Concepts — Udemy (2021)</li>
+                    <li>Responsive Web Design Certification — freeCodeCamp (2022)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Denis K. Built with passion for coding</p>
+        <div class="social">
+            <a href="#"><img src="images/icons/github.svg" alt="GitHub"></a>
+            
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

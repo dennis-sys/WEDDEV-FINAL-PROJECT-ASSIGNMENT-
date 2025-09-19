@@ -1,0 +1,199 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header & Nav */
+header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills circle without distortion */
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.E-commerce{
+width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills circle without distortion */
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}  
+
+.WeatherApp{
+width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills circle without distortion */
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Task_manager{
+width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills circle without distortion */
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero span {
+    color: #FFD700;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+footer .social img {
+    width: 30px;
+    margin: 0 0.5rem;
+    filter: invert(1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f8f9fa;
+    color: #333;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007BFF;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffc107; /* Yellow for impact */
+}
+
+.hero span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}

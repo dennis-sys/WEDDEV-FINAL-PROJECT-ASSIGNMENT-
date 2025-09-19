@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        padding: 2rem 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
